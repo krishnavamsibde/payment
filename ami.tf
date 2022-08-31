@@ -2,10 +2,11 @@ provider "aws" {
   region = "us-east-1"
 }
 
+
 terraform {
   backend "s3" {
-    bucket = "terraform-b65"
-    key    = "ami/payment/terraform.tfstate"
+    bucket = "terraform-kvbucket"
+    key    = "ami/frontend/terraform.tfstate"
     region = "us-east-1"
   }
 }
